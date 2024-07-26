@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+    <style>
+        div
+        {
+            background-color: brown;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            border-radius: 25%;
+            animation-name: ex;
+            animation-duration: 3s;
+            animation-iteration-count: 2;
+            /*animation-direction: ;*/
+            transition-property: transform;
+            transition-duration: 1s;
+            /*animation-timing-function: ease-in,ease-out,linear,cubic-beizer; -specifies the diferent stages of timing of animation*/
+            /*animation-fill-mode: ;*/
+        }
+        @keyframes ex {
+            0%
+            {
+                background-color: brown;
+                top:0px;
+                left: 0px;
+            }
+            25%
+            {
+                background-color: red;
+                position: relative;
+                top:0px;
+                left: 300px;
+                transform: rotate(90deg);
+            }
+            50%
+            {
+                background-color: green;
+                position: relative;
+                top:300px;
+                left: 300px;
+                transform: rotate(180deg);
+            }
+            75%
+            {
+                background-color: wheat;
+                position: relative;
+                top:300px;
+                left: 0px;
+                transform: rotate(270deg);
+            }
+            100%
+            {
+                background-color: brown;
+                position: relative;
+                top:0px;
+                left: 0px;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div></div>
+    </center>
+</body>
+</html>
